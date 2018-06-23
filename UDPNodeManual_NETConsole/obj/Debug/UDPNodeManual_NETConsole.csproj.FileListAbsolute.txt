@@ -1,0 +1,7 @@
+C:\Adocuments\Library\Clapeyron_ind\UDPNodeManual_NETConsole\UDPNodeManual_NETConsole\bin\Debug\UDPNodeManual_NETConsole.exe.config
+C:\Adocuments\Library\Clapeyron_ind\UDPNodeManual_NETConsole\UDPNodeManual_NETConsole\bin\Debug\UDPNodeManual_NETConsole.exe
+C:\Adocuments\Library\Clapeyron_ind\UDPNodeManual_NETConsole\UDPNodeManual_NETConsole\bin\Debug\UDPNodeManual_NETConsole.pdb
+C:\Adocuments\Library\Clapeyron_ind\UDPNodeManual_NETConsole\UDPNodeManual_NETConsole\obj\Debug\UDPNodeManual_NETConsole.csprojResolveAssemblyReference.cache
+C:\Adocuments\Library\Clapeyron_ind\UDPNodeManual_NETConsole\UDPNodeManual_NETConsole\obj\Debug\UDPNodeManual_NETConsole.csproj.CoreCompileInputs.cache
+C:\Adocuments\Library\Clapeyron_ind\UDPNodeManual_NETConsole\UDPNodeManual_NETConsole\obj\Debug\UDPNodeManual_NETConsole.exe
+C:\Adocuments\Library\Clapeyron_ind\UDPNodeManual_NETConsole\UDPNodeManual_NETConsole\obj\Debug\UDPNodeManual_NETConsole.pdb
