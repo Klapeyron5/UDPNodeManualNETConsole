@@ -39,7 +39,7 @@ namespace UDPNodeManual_NETConsole
             switch (splitTask[0])
             {
                 case "help":
-                    writeLine("startnode <port>: starts local port listening and opportunity for sending messages");
+                    writeLine("startnode <outPort> <inPort>: starts local inPort listening and opportunity for sending messages from outPort");
                     writeLine("send <IP> <port> <data>: sends data to IP: port. <data> must be without spaces");
                     writeLine("closenode: closes started UDP socket");
                     writeLine("exit: closes the app");
@@ -48,8 +48,9 @@ namespace UDPNodeManual_NETConsole
                 case "startnode":
                     try
                     {
-                        int inPort = Int32.Parse(splitTask[1]);
-                        udpNode = new UDPNode(inPort);
+                        int outPort = Int32.Parse(splitTask[1]);
+                        int inPort = Int32.Parse(splitTask[2]);
+                        udpNode = new UDPNode(outPort,inPort);
                     }
                     catch (Exception e)
                     {

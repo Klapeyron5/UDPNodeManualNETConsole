@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Net.Sockets;
 using System.Net;
 
 namespace UDPNodeManual_NETConsole
@@ -25,18 +20,19 @@ namespace UDPNodeManual_NETConsole
         /// Одновременно запускает прослушку порта.
         /// </summary>
         /// <param name="inPort"></param>
-        public UDPNode(int inPort)
+        public UDPNode(int outPort, int inPort)
         {
-            startNode(inPort);
+            startNode(outPort,inPort);
         }
 
         /// <summary>
         /// Запуск прослушки порта.
         /// </summary>
+        /// <param name="outPort">порт для отправки</param>
         /// <param name="inPort">порт для прослушки</param>
-        private void startNode(int inPort)
+        private void startNode(int outPort, int inPort)
         {
-            udpSocket = new UDPSocket(inPort, this);
+            udpSocket = new UDPSocket(outPort, inPort, this);
         }
 
         /// <summary>
@@ -84,8 +80,8 @@ namespace UDPNodeManual_NETConsole
 
         public void onSocketListeningReady(UDPSocket udpSocket)
         {
-            Program.writeLine("Listening started on localhost: " + udpSocket.getLocalPort() +
-                    " and on " + AppInfo.LocalIP + ": " + udpSocket.getLocalPort());
+            Program.writeLine("Listening started on localhost: " + udpSocket.getInLocalPort() +
+                    " and on " + AppInfo.LocalIP + ": " + udpSocket.getInLocalPort());
         }
 
         public void onSocketMessageIsNotSentCantFindRemoteURL(string outIP)
